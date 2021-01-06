@@ -40,6 +40,13 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <section>
+        <form action="/api/form-submit" method="post">
+          <label htmlFor="name">Name</label>
+          <input name="name" id="name" type="text" />
+          <input type="submit" />
+        </form>
+      </section>
     </Layout>
   );
 }
